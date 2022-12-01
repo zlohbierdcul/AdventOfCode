@@ -1,6 +1,6 @@
 
 def main():
-    print(f'{find_elf(read_file())}')
+    find_elf(read_file())
 
 
 def read_file():
@@ -22,9 +22,9 @@ def find_elf(calories_list):
     index = calories_per_elf.index(max(calories_per_elf))
     sorted_list = sorted(calories_per_elf, reverse=True)
 
+    print(f'{calories_per_elf[index]=}')
     top_three_calories = sorted_list[0] + sorted_list[1] + sorted_list[2]
-
-    return top_three_calories
+    print(f'{top_three_calories=}')
 
 
 main()
