@@ -27,8 +27,7 @@ def get_marker(datastream, part):
             sublist.append(datastream[x+y])
         # print(sublist)
         if not check_for_dupes(sublist):
-            return x+y+1
-
+            return x+z
 
 
 main()
